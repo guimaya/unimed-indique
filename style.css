@@ -33,14 +33,16 @@ body {
 .indique {
   display: flex;
   justify-content: center;
-  padding: 4.5rem;
   color: var(--dark-green);
   gap: 3rem;
+  padding: 2rem 0;
+  align-items: center;
 
   & .indique-main {
     display: flex;
     flex-direction: column;
     width: min(24rem, 100%);
+    gap: 2rem;
 
     & img {
     }
@@ -52,73 +54,15 @@ body {
       font-size: 1.25rem;
     }
   }
+}
 
-  & .indique-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1.5rem;
-    padding: 1rem;
-    border-radius: 24px;
-    border: 1px solid #cacaca;
-    box-shadow: 8px 6px 23.5px 0px rgba(0, 0, 0, 0.11);
-
-    text-align: center;
-    font-size: 0.75rem;
-
-    & h2 {
-      font-size: 1.25rem;
-    }
-
-    & form {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-    }
-
-    & label {
-      display: block;
-      text-align: left;
-      margin-top: 1rem;
-    }
-
-    & input[type='text'] {
-      display: block;
-      height: 30px;
-      border: none;
-      color: black;
-      padding: 0 12px;
-      font-size: 16px;
-      border-bottom: 1px solid var(--dark-green);
-    }
-
-    & input:focus {
-      outline: 1px solid var(--dark-green);
-    }
-
-    & .checkbox-container {
-      display: flex;
-
-      & input[type='checkbox'] {
-        margin: 0 0.2rem -1rem;
-      }
-    }
-
-    & button {
-      display: flex;
-      margin-top: 1rem;
-      padding: 0.5rem 1.2rem;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 1.2rem;
-      align-items: center;
-      gap: 16px;
-      align-self: stretch;
-      border-radius: 24px;
-      color: var(--orange);
-      background: var(--dark-green);
-    }
-  }
+.main-text {
+  border: 1px solid var(--light-green);
+  color: #ffff;
+  background-color: var(--green);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
 }
 
 .voucher {
@@ -151,7 +95,7 @@ body {
       padding: 1rem;
       width: 30rem;
       border-radius: 1.5rem;
-      margin: 1rem 0;
+      margin: -1rem 0 2rem;
     }
 
     > p:last-child {
@@ -262,24 +206,6 @@ body {
         font-size: 1.25rem;
       }
     }
-
-    & .indique-form {
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 1rem;
-      border-radius: 24px;
-      border: 1px solid #cacaca;
-      box-shadow: 8px 6px 23.5px 0px rgba(0, 0, 0, 0.11);
-
-      text-align: center;
-      font-size: 0.75rem;
-
-      & h2 {
-        font-size: 1.25rem;
-      }
-    }
   }
 
   .voucher {
@@ -305,7 +231,7 @@ body {
         border: 1px solid var(--light-green);
         font-size: 1rem;
         font-style: italic;
-        width: min(20rem, 100%);
+        width: min(25rem, 100%);
 
         padding: 1rem;
         border-radius: 1.5rem;
