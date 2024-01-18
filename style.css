@@ -275,7 +275,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: min(27rem, 100%);
+    width: min(40rem, 100%);
     margin-inline: auto;
     padding: 0 1rem;
 
